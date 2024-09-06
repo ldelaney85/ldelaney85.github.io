@@ -3,30 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helloween 2024</title>
+    <title>Helloween 2024 Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
             background-color: #ffffff;
+            transition: background-color 1s;
         }
         h1 {
+            font-family: Consolas, monospace;
+            font-size: 24px;
             color: black;
-            font-size: 5em;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Helloween 2024</h1><br>
-    <p>Date: Saturday, Oct. 27<br>
-       Time: 6:00PM CST.<br>
-       Location: 7936 Alden St., Lenexa, KS, 66215<br>
-       Required for entry: Costume, Good vibes<br>
-    </p>
+    <h1>Helloween 2024</h1>
+    <table>
+        <tr>
+            <td>Date</td>
+            <td>Saturday, October 27</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>6:00 PM CST</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>7936 Alden St., Lenexa, KS 66215</td>
+        </tr>
+        <tr>
+            <td>Required for entry</td>
+            <td>Costume, pleasant attitude</td>
+        </tr>
+        <tr>
+            <td>Row 5, Col 1</td>
+            <td>Row 5, Col 2</td>
+        </tr>
+    </table>
     <script>
         function getRandomColor() {
             const letters = '0123456789ABCDEF';
